@@ -1,0 +1,22 @@
+{
+    "ingredients": {
+        "5dcaed2788298": {
+            "id": "5dcaed2788298",
+            "name": "Chicken",
+            "amount": "450g",
+            "type": "meat"
+        },
+        "5dcaede22ad91": {
+            "id": "5dcaede22ad91",
+            "name": "Canned Tomatos",
+            "amount": "450g",
+            "type": "conve"
+        },
+        "5dcaedf7982bf": {
+            "id": "5dcaedf7982bf",
+            "name": "Salt",
+            "amount": "1kg",
+            "type": "basic"
+        }
+    }
+}
