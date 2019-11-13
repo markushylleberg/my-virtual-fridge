@@ -13,3 +13,11 @@
 .basic{
     background-color: rgba(196, 196, 196, 0.3)!important;
 }
+
+.bg-lighter{
+    background-color: rgba(225, 225, 225, 0.367)!important;
+}
+
+.pre-scrollable{
+    max-height: 470px!important;
+}

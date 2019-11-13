@@ -1,22 +1,47 @@
 {
     "ingredients": {
-        "5dcaed2788298": {
-            "id": "5dcaed2788298",
-            "name": "Chicken",
-            "amount": "450g",
+        "5dcc0f290f3c8": {
+            "id": "5dcc0f290f3c8",
+            "name": "Potatos",
+            "amount": "2.05",
+            "type": "fruit"
+        },
+        "5dcc0f77cec0e": {
+            "id": "5dcc0f77cec0e",
+            "name": "Chili",
+            "amount": "0.2",
+            "type": "fruit"
+        },
+        "5dcc0f80ca9e4": {
+            "id": "5dcc0f80ca9e4",
+            "name": "Ginger",
+            "amount": "0.34",
+            "type": "fruit"
+        },
+        "5dcc10518cb5f": {
+            "id": "5dcc10518cb5f",
+            "name": "Salami",
+            "amount": "0.23",
             "type": "meat"
         },
-        "5dcaede22ad91": {
-            "id": "5dcaede22ad91",
-            "name": "Canned Tomatos",
-            "amount": "450g",
-            "type": "conve"
+        "5dcc1081eeccf": {
+            "id": "5dcc1081eeccf",
+            "name": "Cucumber",
+            "amount": "0.39",
+            "type": "fruit"
         },
-        "5dcaedf7982bf": {
-            "id": "5dcaedf7982bf",
-            "name": "Salt",
-            "amount": "1kg",
-            "type": "basic"
+        "5dcc1661c5abe": {
+            "id": "5dcc1661c5abe",
+            "name": "Chicken",
+            "amount": "1.65",
+            "type": "meat"
+        }
+    },
+    "dinners": {
+        "5dcc29378ebe8": {
+            "id": "5dcc29378ebe8",
+            "dinner": "Lasagna",
+            "day": "Tuesday"
         }
     }
 }
