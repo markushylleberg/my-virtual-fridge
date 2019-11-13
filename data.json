@@ -1,47 +1,307 @@
 {
     "ingredients": {
-        "5dcc0f290f3c8": {
-            "id": "5dcc0f290f3c8",
-            "name": "Potatos",
-            "amount": "2.05",
-            "type": "fruit"
+        "5dcc52e4080a8": {
+            "id": "5dcc52e4080a8",
+            "name": "Havregryn",
+            "amount": "0.6",
+            "type": "conve"
         },
-        "5dcc0f77cec0e": {
-            "id": "5dcc0f77cec0e",
-            "name": "Chili",
+        "5dcc52f843be4": {
+            "id": "5dcc52f843be4",
+            "name": "Makrel",
             "amount": "0.2",
+            "type": "conve"
+        },
+        "5dcc5307c11e0": {
+            "id": "5dcc5307c11e0",
+            "name": "Havrem\u00e6lk",
+            "amount": "1.7",
+            "type": "conve"
+        },
+        "5dcc5313d4cf3": {
+            "id": "5dcc5313d4cf3",
+            "name": "Kammerjunker",
+            "amount": "0.25",
+            "type": "conve"
+        },
+        "5dcc53206f4c0": {
+            "id": "5dcc53206f4c0",
+            "name": "Koldsk\u00e5l",
+            "amount": "0.6",
+            "type": "conve"
+        },
+        "5dcc53641cc1a": {
+            "id": "5dcc53641cc1a",
+            "name": "Kokosn\u00f8ddeolie",
+            "amount": "0.15",
+            "type": "conve"
+        },
+        "5dcc537b0e47c": {
+            "id": "5dcc537b0e47c",
+            "name": "Mandler",
+            "amount": "0.4",
+            "type": "conve"
+        },
+        "5dcc5391092e2": {
+            "id": "5dcc5391092e2",
+            "name": "Kaffeb\u00f8nner",
+            "amount": "0.5",
+            "type": "conve"
+        },
+        "5dcc53d96631e": {
+            "id": "5dcc53d96631e",
+            "name": "Brune ris",
+            "amount": "0.4",
+            "type": "conve"
+        },
+        "5dcc53e4685ea": {
+            "id": "5dcc53e4685ea",
+            "name": "Kartofler",
+            "amount": "2",
             "type": "fruit"
         },
-        "5dcc0f80ca9e4": {
-            "id": "5dcc0f80ca9e4",
-            "name": "Ginger",
-            "amount": "0.34",
+        "5dcc541ad2c51": {
+            "id": "5dcc541ad2c51",
+            "name": "Bearnaise",
+            "amount": "0.2",
+            "type": "conve"
+        },
+        "5dcc5422484f9": {
+            "id": "5dcc5422484f9",
+            "name": "Gr\u00e6skerkerner",
+            "amount": "0.2",
+            "type": "conve"
+        },
+        "5dcc5452aab6b": {
+            "id": "5dcc5452aab6b",
+            "name": "Kokosm\u00e6lk",
+            "amount": "0.5",
+            "type": "conve"
+        },
+        "5dcc5459825ed": {
+            "id": "5dcc5459825ed",
+            "name": "Hakket tomater",
+            "amount": "0.5",
+            "type": "conve"
+        },
+        "5dcc547092e04": {
+            "id": "5dcc547092e04",
+            "name": "R\u00f8de linser",
+            "amount": "0.25",
+            "type": "conve"
+        },
+        "5dcc54878c590": {
+            "id": "5dcc54878c590",
+            "name": "Tipo 00 mel",
+            "amount": "0.25",
+            "type": "conve"
+        },
+        "5dcc54a73e8ff": {
+            "id": "5dcc54a73e8ff",
+            "name": "Hvedemel",
+            "amount": "0.25",
+            "type": "conve"
+        },
+        "5dcc54a9679a5": {
+            "id": "5dcc54a9679a5",
+            "name": "Majsstivelse",
+            "amount": "0.2",
+            "type": "conve"
+        },
+        "5dcc54c390c08": {
+            "id": "5dcc54c390c08",
+            "name": "Letm\u00e6lk",
+            "amount": "0.8",
+            "type": "conve"
+        },
+        "5dcc54d548a75": {
+            "id": "5dcc54d548a75",
+            "name": "Peberfrugt",
+            "amount": "0.3",
             "type": "fruit"
         },
-        "5dcc10518cb5f": {
-            "id": "5dcc10518cb5f",
+        "5dcc54dd6f7b6": {
+            "id": "5dcc54dd6f7b6",
+            "name": "Ingef\u00e6r",
+            "amount": "0.15",
+            "type": "fruit"
+        },
+        "5dcc54ed45741": {
+            "id": "5dcc54ed45741",
+            "name": "Broccoli",
+            "amount": "0.5",
+            "type": "fruit"
+        },
+        "5dcc54f2dbace": {
+            "id": "5dcc54f2dbace",
+            "name": "Chili",
+            "amount": "0.1",
+            "type": "fruit"
+        },
+        "5dcc54fe6d3a8": {
+            "id": "5dcc54fe6d3a8",
+            "name": "Hvidl\u00f8g",
+            "amount": "0.15",
+            "type": "fruit"
+        },
+        "5dcc550d04069": {
+            "id": "5dcc550d04069",
+            "name": "Guler\u00f8dder",
+            "amount": "1.7",
+            "type": "fruit"
+        },
+        "5dcc55192083e": {
+            "id": "5dcc55192083e",
+            "name": "Lime",
+            "amount": "0.15",
+            "type": "fruit"
+        },
+        "5dcc5524297f3": {
+            "id": "5dcc5524297f3",
+            "name": "Mynte",
+            "amount": "0.1",
+            "type": "fruit"
+        },
+        "5dcc55275cbce": {
+            "id": "5dcc55275cbce",
+            "name": "Timian",
+            "amount": "0.1",
+            "type": "fruit"
+        },
+        "5dcc5537ce53c": {
+            "id": "5dcc5537ce53c",
+            "name": "R\u00f8dbeder",
+            "amount": "0.8",
+            "type": "conve"
+        },
+        "5dcc554399091": {
+            "id": "5dcc554399091",
+            "name": "Leverpostej",
+            "amount": "0.3",
+            "type": "meat"
+        },
+        "5dcc55500beb4": {
+            "id": "5dcc55500beb4",
+            "name": "Rugbr\u00f8d",
+            "amount": "2",
+            "type": "conve"
+        },
+        "5dcc555a1061c": {
+            "id": "5dcc555a1061c",
+            "name": "Krappesalat",
+            "amount": "0.2",
+            "type": "meat"
+        },
+        "5dcc557185c66": {
+            "id": "5dcc557185c66",
+            "name": "Karrysild",
+            "amount": "0.25",
+            "type": "conve"
+        },
+        "5dcc55860c2de": {
+            "id": "5dcc55860c2de",
+            "name": "\u00c6g",
+            "amount": "0.25",
+            "type": "conve"
+        },
+        "5dcc5591e00c8": {
+            "id": "5dcc5591e00c8",
             "name": "Salami",
-            "amount": "0.23",
+            "amount": "0.3",
             "type": "meat"
         },
-        "5dcc1081eeccf": {
-            "id": "5dcc1081eeccf",
-            "name": "Cucumber",
-            "amount": "0.39",
-            "type": "fruit"
-        },
-        "5dcc1661c5abe": {
-            "id": "5dcc1661c5abe",
-            "name": "Chicken",
-            "amount": "1.65",
+        "5dcc5596c6490": {
+            "id": "5dcc5596c6490",
+            "name": "Skinke",
+            "amount": "0.3",
             "type": "meat"
+        },
+        "5dcc559f0c3f6": {
+            "id": "5dcc559f0c3f6",
+            "name": "Spegep\u00f8lse",
+            "amount": "0.25",
+            "type": "meat"
+        },
+        "5dcc55a6a15c9": {
+            "id": "5dcc55a6a15c9",
+            "name": "Kartofelspegep\u00f8lse",
+            "amount": "0.25",
+            "type": "meat"
+        },
+        "5dcc55b4b29b8": {
+            "id": "5dcc55b4b29b8",
+            "name": "Salsa sauce",
+            "amount": "0.15",
+            "type": "conve"
+        },
+        "5dcc55c853d0b": {
+            "id": "5dcc55c853d0b",
+            "name": "Hvidl\u00f8gssm\u00f8r",
+            "amount": "0.3",
+            "type": "conve"
+        },
+        "5dcc55d57ab92": {
+            "id": "5dcc55d57ab92",
+            "name": "Vegansk sm\u00f8r",
+            "amount": "0.25",
+            "type": "conve"
+        },
+        "5dcc55ff2ff2a": {
+            "id": "5dcc55ff2ff2a",
+            "name": "Pommes frites",
+            "amount": "0.3",
+            "type": "conve"
+        },
+        "5dcc56064ca93": {
+            "id": "5dcc56064ca93",
+            "name": "Kylling",
+            "amount": "0.45",
+            "type": "meat"
+        },
+        "5dcc562408ee0": {
+            "id": "5dcc562408ee0",
+            "name": "Cordon bleu",
+            "amount": "0.5",
+            "type": "meat"
+        },
+        "5dcc56a3077ae": {
+            "id": "5dcc56a3077ae",
+            "name": "Hvidl\u00f8gsbr\u00f8d",
+            "amount": "0.5",
+            "type": "conve"
+        },
+        "5dcc56c52600c": {
+            "id": "5dcc56c52600c",
+            "name": "Nanbr\u00f8d",
+            "amount": "0.5",
+            "type": "conve"
         }
     },
     "dinners": {
-        "5dcc29378ebe8": {
-            "id": "5dcc29378ebe8",
-            "dinner": "Lasagna",
+        "5dcc5648ccd8c": {
+            "id": "5dcc5648ccd8c",
+            "dinner": "Spinatlasagne",
+            "day": "Monday"
+        },
+        "5dcc566fd4656": {
+            "id": "5dcc566fd4656",
+            "dinner": "Ris med gr\u00f8ntsager og kylling",
             "day": "Tuesday"
+        },
+        "5dcc56b315480": {
+            "id": "5dcc56b315480",
+            "dinner": "Kartoffelmos med guler\u00f8dder   hvidl\u00f8gsbr\u00f8d",
+            "day": "Wednesday"
+        },
+        "5dcc56ceacf2d": {
+            "id": "5dcc56ceacf2d",
+            "dinner": "Dahl med nanbr\u00f8d",
+            "day": "Thursday"
+        },
+        "5dcc56e2314e3": {
+            "id": "5dcc56e2314e3",
+            "dinner": "Cordon blue med pommes og sauce",
+            "day": "Friday"
         }
     }
 }
