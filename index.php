@@ -44,6 +44,7 @@
                                 <option value="meat">Meat</option>
                                 <option value="conve">Convenience</option>
                                 <option value="basic">Basic kitchen groceries</option>
+                                <option value="frost">Frost</option>
                             </select>
                     </div>
 
@@ -93,7 +94,7 @@
 
         <div class="bg-lighter mt-3 col-md-6 col-sm-12 p-5">
 
-            <i class="fas fa-utensils"></i>
+            <i class="fas fa-utensils text-primary"></i>
             <h3 class="mt-3">Add dinner</h3>
                 <form id="dinnerForm" class="mt-4">
 
@@ -137,11 +138,15 @@
                         $jData = json_decode($sjData);
 
                         foreach($jData->dinners as $dinner){
+
+                            $finished = $dinner->finished ? 'class="finished-style"' : '';
+
                             echo '
-                            <tr id='.$dinner->id.'>
+                            <tr id='.$dinner->id.' '.$finished.'>
                             <td>'.$dinner->day.'</td>
                             <td>'.$dinner->dinner.'</td>
-                            <td><a href="#" class="btn btn-light delete">X</a></td>
+                            <td><button href="#" class="btn btn-light finished">✓</button></td>
+                            <td><button href="#" class="btn btn-light delete">X</button></td>
                             </tr>
                             ';
                         }
@@ -151,6 +156,61 @@
             </table>
 
         </div>
+
+                    <div class="col-md-6 bg-light p-5 col-sm-12 mt-3">
+
+                        <i class="fas fa-carrot text-primary"></i>
+
+                        <h3 class="mt-3">Add item to shopping list</h3>
+                        <form id="shoppingForm" class="mt-4">
+                            <div class="form-group">
+                                <label for="name">Name of ingredient</label>
+                                <input type="text" id="itemName" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="amount">Amount</label>
+                                <input type="text" id="itemAmount" class="form-control">
+                            </div>
+
+                            <input type="submit" class="btn btn-primary mt-3" value="Add ingredient">
+
+                        </form>
+                    </div>
+
+                        <div class="col-md-6 col-sm-12 mt-3">
+
+                        <div class="pre-scrollable">
+                        <table class="table table-striped mt-3">
+                            <thead>
+                                <th>Name</th>
+                                <th>Amount</th>
+                                <th></th>
+                            </thead>
+                            <tbody id="shopping-list">
+                                <?php
+                                    $sjData = file_get_contents('data.json');
+                                    $jData = json_decode($sjData);
+
+                                    foreach($jData->shoppinglist as $item){
+
+                                        $finished = $item->finished ? 'class="finished-style"' : '';
+
+                                        echo '
+                                        <tr id='.$item->id.' '.$finished.'>
+                                        <td>'.$item->name.'</td>
+                                        <td>'.$item->amount.'</td>
+                                        <td><button href="#" class="btn btn-light finished">✓</button></td>
+                                        <td><button href="#" class="btn btn-light delete">X</button></td>
+                                        </tr>
+                                        ';
+                                    }
+
+                                ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
         
         </div>
 

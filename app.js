@@ -24,6 +24,14 @@
         }
     }
 
+// Item constructor
+    class Item {
+        constructor(name, amount) {
+            this.name = name;
+            this.amount = amount;
+        }
+    }
+
 // JSON
     class MyJSON {
 
@@ -53,6 +61,30 @@
 
             $.ajax({
                 url: `api-add-dinner.php?dinner=${dinner.dinner}&day=${dinner.day}`,
+                method: 'GET'
+            }).done( function(response) {
+                console.log(response);
+            })
+
+        }
+
+        static markItemAsFinished(e, from){
+
+            const id = e.parentElement.parentElement.id;
+
+            $.ajax({
+                url: 'api-dinner-finished.php?id='+id+'&from='+from,
+                method: 'GET'
+            }).done( function(response) {
+                console.log(response);
+            })
+
+        }
+
+        static addItemToList(item) {
+
+            $.ajax({
+                url: `api-add-item.php?name=${item.name}&amount=${item.amount}`,
                 method: 'GET'
             }).done( function(response) {
                 console.log(response);
@@ -105,12 +137,31 @@
             row.innerHTML = `
                             <td>${dinner.day}</td>
                             <td>${dinner.dinner}</td>
-                            <td><a href="#" class="btn btn-light delete">X</a></td>
+                            <td><button href="#" class="btn btn-light finished">✓</button></td>
+                            <td><button href="#" class="btn btn-light delete">X</button></td>
                             `;
 
             list.appendChild(row);
 
         }
+
+        static addItemToList(item) {
+
+            const list = one('#shopping-list');
+
+            const row = document.createElement('tr');
+
+            row.innerHTML = `
+                            <td>${item.name}</td>
+                            <td>${item.amount}</td>
+                            <td><button href="#" class="btn btn-light finished">✓</button></td>
+                            <td><button href="#" class="btn btn-light delete">X</button></td>
+                            `;
+
+            list.appendChild(row);
+
+        }
+
 
         static removeFromList(e, from) {
 
@@ -133,6 +184,15 @@
 
                 $.ajax({
                     url: 'api-remove-ingredient.php?id='+id+'&list=dinners',
+                    method: 'GET'
+                }).done( function(response) {
+                    console.log(response);
+                });
+
+            } else if ( from == 'shopping-list' ){
+
+                $.ajax({
+                    url: 'api-remove-ingredient.php?id='+id+'&list=shopping',
                     method: 'GET'
                 }).done( function(response) {
                     console.log(response);
@@ -177,6 +237,14 @@
 
         }
 
+        static markDinnerAsFinished(e, from) {
+
+            e.parentElement.parentElement.classList.toggle('finished-style');
+
+            MyJSON.markItemAsFinished(e, from);
+    
+        }
+
         static updateTotalAmount() {
 
             let amount = all('#ingredient-list tr').length;
@@ -205,6 +273,8 @@
             const name = one('#name').value = '';
             const amount = one('#amount').value = '';
             const dinner = one('#dinner').value = '';
+            const itemName = one('#itemName').value = '';
+            const itemAmount = one('#itemAmount').value = '';
         }
 
     }
@@ -272,6 +342,37 @@
 
     });
 
+    one('#shoppingForm').addEventListener('submit', (e) => {
+
+        e.preventDefault();
+
+        const name = one('#itemName').value;
+        const amount = one('#itemAmount').value;
+
+        if ( name == '' || amount == '' ) {
+
+
+            UI.showMessage('Please fill out everything in the form', 'alert-danger');
+
+        } else {
+
+            const newShoppingItem = new Item(name, amount);
+
+            UI.addItemToList(newShoppingItem);
+
+            MyJSON.addItemToList(newShoppingItem);
+
+            UI.showMessage('A new dinner has been added', 'alert-success');
+
+            UI.clearFields();
+
+        }
+
+
+
+
+    })
+
 
 // Edit ingredients from list
     one('#ingredient-list').addEventListener('click', (e) => {
@@ -288,5 +389,16 @@
     one('#dinner-list').addEventListener('click', (e) => {
         if ( e.target.classList.contains('delete') ){
             UI.removeFromList(e.target, 'dinner-list');
+        } else if ( e.target.classList.contains('finished') ){
+            UI.markDinnerAsFinished(e.target, 'dinner');
+        }
+
+    })
+
+    one('#shopping-list').addEventListener('click', (e) => {
+        if ( e.target.classList.contains('delete') ){
+            UI.removeFromList(e.target, 'shopping-list');
+        } else if ( e.target.classList.contains('finished') ){
+            UI.markDinnerAsFinished(e.target, 'shopping');
         }
     })

@@ -12,6 +12,7 @@
     $newDinner->id = $newDinnerID;
     $newDinner->dinner = $dinner;
     $newDinner->day = $day;
+    $newDinner->finished = 0;
     
     $jData->dinners->$newDinnerID = $newDinner;
 

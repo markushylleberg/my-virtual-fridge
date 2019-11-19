@@ -17,12 +17,22 @@
             
         }
 
-    } else {
+    } else if ( $list == 'dinners' ) {
 
         foreach($jData->dinners as $dinner){
     
             if( $dinner->id == $id ){
                 unset($jData->dinners->$id);
+            } 
+            
+        }
+
+    } else {
+
+        foreach($jData->shoppinglist as $item){
+    
+            if( $item->id == $id ){
+                unset($jData->shoppinglist->$id);
             } 
             
         }

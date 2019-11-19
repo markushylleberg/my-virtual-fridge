@@ -14,6 +14,18 @@
     background-color: rgba(196, 196, 196, 0.3)!important;
 }
 
+.frost{
+    background-color: rgba(73, 119, 128, 0.4)!important;
+}
+
+.finished-style{
+    background-color: rgba(78, 198, 51, 0.3)!important;
+}
+
+tr.finished-style td:nth-child(3){
+    opacity: 0;
+}
+
 .bg-lighter{
     background-color: rgba(225, 225, 225, 0.367)!important;
 }
